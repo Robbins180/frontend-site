@@ -1,4 +1,4 @@
-import React from 'react'
+git import React from 'react'
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css'
@@ -6,7 +6,8 @@ import './HeroSection.css'
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='' autoPlay loop muted />
+    // Video File is placed under here
+      <video src='https://media.giphy.com/media/MvovQGsMBY9H2/giphy.mp4' autoPlay loop muted />
       <h1>Import Cool Phrase</h1>
       <p>Second Cool Phrase</p>
       <div className='herp-btns'>
