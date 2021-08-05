@@ -10,14 +10,14 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='/images/Cover.jpeg'
+              src='/images/StreetArt.jpeg'
               text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Art'
+              label='Classic'
               path='/services'
             />
             <CardItem
               src='/images/PaintingArt.jpeg'
-              text='Travel through the Islands of Bali in a Private Cruise'
+              text='Art that does not attempt to represent an accurate depiction of a visual reality but instead use shapes, colours, forms and gestural marks to achieve its effect'
               label='Abstract'
               path='/services'
             />
@@ -25,13 +25,13 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='/images/B:WArt.jpeg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+              text='White often represents innocence, purity, and new beginnings. Black, on the other hand, can be seen as conservative or intimidating, but it is also often associated with sophistication, luxury, confidence, and strength.'
               label='Black & White'
               path='/services'
             />
             <CardItem
               src='/images/RealismArt.jpeg'
-              text='Experience Football on Top of the Himilayan Mountains'
+              text='Artworks painted in a realistic almost photographic way.'
               label='Realism'
               path='/products'
             />
