@@ -68,6 +68,7 @@
 
 .footer-link-items h2 {
   margin-bottom: 16px;
+  color: #fff;
 }
 
 .footer-link-itmes > h2 {
@@ -91,6 +92,9 @@
 .footer-input::placeholder {
   color: #b1b1b1;
 }
+
+/* Social Icons */
+
 .social-icon-link {
   color: #fff;
   font-size: 24px;
@@ -113,4 +117,48 @@
 .social-icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 240px;
 }
+
+  .social-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .website-rights {
+    color: #fff;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (max-width: 820px) {
+    .footer-links {
+      padding-top: 2rem;
+    }
+
+    .footer-input {
+      width: 100%;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .footer-link-wrapper {
+      flex-direction: column;
+    }
+
+    .social-media-wrap {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  }
