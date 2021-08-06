@@ -10,6 +10,4 @@ import Sign from '../Sign';
     );
   };
 
-export default function Home() {
-  return <h1 className='sign-up'>SIGN-UP</h1>
-};
+export default SignUp 
