@@ -20,7 +20,7 @@ function Sign() {
         </div>
         <div className='box'>Phone Number
           <form>
-            <input type='email' className='form' placeholder='Enter your phone number'/>
+            <input type='email' className='form' placeholder='Enter your number'/>
           </form>
         </div>
         <div className='box'>Email

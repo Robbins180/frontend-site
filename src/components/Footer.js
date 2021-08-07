@@ -65,7 +65,7 @@ function Footer() {
          <div class='footer-logo'>
            <Link to='/' className='social-logo'>
              Template
-             <i class='fab fa-typo3' />
+             <i class='fas fa-cogs' />
            </Link>
          </div>
          <small class='website-rights'>Template © 2021</small>
