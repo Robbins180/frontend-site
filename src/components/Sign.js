@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sign.css'
-import { Link } from 'react-router-dom'
-import { Button } from './Button'
+// import { Link } from 'react-router-dom'
+// import { Button } from './Button'
 
 function Sign() {
   return (
