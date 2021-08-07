@@ -37,7 +37,7 @@ function Cards() {
             />
             <CardItem
               src='/images/CatArt.jpeg'
-              text='Ride through the Sahara Desert on a guided camel tour'
+              text='Artwork with an animal theme.'
               label='Animal'
               path='/sign-up'
             />
