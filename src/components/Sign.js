@@ -2,8 +2,16 @@ import React from 'react'
 import './Sign.css'
 // import { Link } from 'react-router-dom'
 // import { Button } from './Button'
+import { useAuth0 } from '@auth0/auth0-react';
+
+
+
+
 
 function Sign() {
+
+    const { signUpWithRedirect } = useAuth0();
+
   return (
     <div className='sign'>
       <div className='sign-container'>
@@ -34,14 +42,18 @@ function Sign() {
           </form>
         </div>
         <button
-        // buttonStyle='btn--primary'
-        id='btn-signup'>Sign Up!</button>
+         buttonStyle='btn--primary'
+         id='BtnSignup'
+         onCLick={() => signUpWithRedirect()}> Sign Up!</button>
         <small className='forgot'>Forgot Password</small>
       </div>
 
     </div>
 
 
-  );
-}
-export default Sign;
+  )
+
+};
+
+
+  export default Sign;
