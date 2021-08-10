@@ -2,6 +2,7 @@ import React from 'react';
 import '../../App.css'
 import Sign from '../Sign';
 
+
   function SignUp() {
     return (
       <>
@@ -10,4 +11,4 @@ import Sign from '../Sign';
     );
   };
 
-export default SignUp 
+export default SignUp

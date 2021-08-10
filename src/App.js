@@ -10,6 +10,7 @@ import SignUp from './components/pages/SignUp';
 import Footer from './components/Footer';
 
 
+
 function App() {
   return (
     <>

@@ -8,9 +8,11 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 
 
-function Sign() {
+const Sign = () => {
 
-    const { signUpWithRedirect } = useAuth0();
+  const { user } = useAuth0();
+
+  const { signUpWithRedirect, isAuthenticated } = useAuth0();
 
   return (
     <div className='sign'>
@@ -26,7 +28,7 @@ function Sign() {
             <input type='email' className='form' placeholder='Enter your last name'/>
           </form>
         </div>
-        <div className='box'>Phone Number
+        <div className='box'>Phone
           <form>
             <input type='email' className='form' placeholder='Enter your number'/>
           </form>
@@ -42,17 +44,23 @@ function Sign() {
           </form>
         </div>
         <button
-         buttonStyle='btn--primary'
-         id='BtnSignup'
-         onCLick={() => signUpWithRedirect()}> Sign Up!</button>
+         onClick={() => signUpWithRedirect()}
+         id='BtnSignup'>Sign Up
+       </button>
         <small className='forgot'>Forgot Password</small>
       </div>
 
     </div>
 
 
+   //  !isAuthenticated && (
+   //   <button onClick={() =>
+   //       signUpWithRedirect()}
+   //     >
+   //     Log In
+   //   </button>
+   // )
   )
-
 };
 
 
