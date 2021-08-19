@@ -10,9 +10,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 const Sign = () => {
 
-  const { user } = useAuth0();
-
-  const { signUpWithRedirect, isAuthenticated } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, user } = useAuth0();
 
   return (
     <div className='sign'>
@@ -44,7 +42,7 @@ const Sign = () => {
           </form>
         </div>
         <button
-         onClick={() => signUpWithRedirect()}
+         onClick={() => loginWithRedirect()}
          id='BtnSignup'>Sign Up
        </button>
         <small className='forgot'>Forgot Password</small>
