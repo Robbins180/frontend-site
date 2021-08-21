@@ -3,6 +3,8 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Logout from './Logout';
+import Profile from './Profile';
+import LogIn from './LogIn';
 import { useAuth0 } from '@auth0/auth0-react';
 
 function Navbar() {
@@ -30,15 +32,20 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
+
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Template Site
             <i className='fas fa-cogs' />
           </Link>
-          <Logout className='nav-menu' />
+
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
+
+
+
+
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
@@ -63,19 +70,11 @@ function Navbar() {
                 Products
               </Link>
             </li>
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={() => loginWithRedirect()}
-              >
-                Sign Up
-              </Link>
+            <li className='nav-item'>
+              <LogIn className='nav-links' />
+              <Logout className='nav-links' />
             </li>
-
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
-        )
         </div>
       </nav>
 

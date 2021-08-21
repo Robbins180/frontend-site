@@ -63,6 +63,11 @@
   transition: all 0.2s ease-out;
 }
 
+.btnLogin {
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
 .fa-bars {
   color: #fff;
 }
@@ -157,4 +162,17 @@
     color: #242424;
     transition: 250ms;
   }
+}
+
+/* Profile */
+img {
+  width: 35px;
+  border-radius: 25px;
+  display: flex;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css'
-import SignUp from '../SignUp';
+import LogIn from '../LogIn';
 import Profile from '../Profile';
 // import Logout from '../Logout';
 
@@ -8,7 +8,7 @@ import Profile from '../Profile';
   function Authenticate() {
     return (
       <>
-        <SignUp />
+        <LogIn />
         <Profile />
       </>
     );
