@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import Logout from './Logout';
 import { useAuth0 } from '@auth0/auth0-react';
 
 function Navbar() {
-  const { loginWithRedirect } = useAuth0()
+  const { loginWithRedirect, isAuthenticated } = useAuth0()
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -34,6 +35,7 @@ function Navbar() {
             Template Site
             <i className='fas fa-cogs' />
           </Link>
+          <Logout className='nav-menu' />
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -61,7 +63,6 @@ function Navbar() {
                 Products
               </Link>
             </li>
-
             <li>
               <Link
                 to='/sign-up'
@@ -71,10 +72,13 @@ function Navbar() {
                 Sign Up
               </Link>
             </li>
+
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+        )
         </div>
       </nav>
+
     </>
   );
 }
